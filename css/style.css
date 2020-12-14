@@ -1,0 +1,246 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+header {
+	background: #BBBBBB;
+	padding: 20px 0;
+}
+
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;	
+}
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+nav li {
+	display: inline;
+	color: #BBBBBB;
+	margin: 0 0 0 15px;
+	
+}
+nav a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px
+	
+}
+nav a:hover{
+	color: #C78C19;
+	text-decoration: underline;
+}
+.produtos {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+.produtos li {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 5%;
+	background: white;
+}
+.produtos li:hover {
+	border-color: #C78C19;
+}
+.produtos li:active {
+	border-color: #088C19;
+}
+.produtos h2 {
+	font-weight: bold;
+	font-size: 30px;
+}
+.produtos li:hover h2 {
+	font-size: 32px;
+}
+.descricao {
+	font-size: 18px;
+}
+.preco {
+	font-weight: bold;
+	font-size: 22px;
+	margin-top: 10px;
+	vertical-align: top;
+}
+footer {
+	text-align: center;
+	background: url("../img/bg.jpg");
+	padding: 30px 0;
+}
+footer p {
+	font-size: 12px;
+	color: #FFFFFF;
+	margin-top: 20px;
+}
+form {
+	width: 940px;
+	margin: 40px auto;
+}
+form label, form legend {
+	display: block;
+	margin-bottom: 5px;
+	font-size: 20px;
+	font-weight: bold;
+	
+}
+.input-padrao {
+	display: block;
+	margin-bottom: 30px;
+	width: 40%;
+	padding: 5px;
+}
+.radio {
+	margin: 20px 0 20px 0;
+}
+
+.checkbox {
+	margin: 20px 0;
+}
+fieldset label{
+	font-size: 14px;
+}
+select {
+	padding: 5px;
+}
+.enviar {
+	width: 20%;
+	background-color: orange;
+	padding: 10px 15px ;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 10px;
+	transition: 1s all; 
+	cursor: pointer;
+}
+.enviar:hover {
+	background: darkorange;
+	border: none;
+	transform: scale(1.1) rotate(360deg);
+	
+}
+table {
+	
+	width: 20%;
+	margin: 40px 0 40px 15% ;
+	display: inline-block;
+}
+thead {
+	background: #555555;
+	color: white;
+	
+}
+td, th {
+	border: solid 1px #000000;
+	padding: 5px 10px;
+	text-align: center;
+}
+/* css do Home */
+.banner {
+	width: 100%;
+	height:300px;
+	object-fit: cover;
+    object-position: center;
+	box-shadow: 0 10px 10px #444444;
+}
+main {
+	background: linear-gradient(#FEFEFE, #777777);
+}
+p:first-letter {
+	font-size:25px;
+	font-weight:bold;
+}
+.titulo-principal {
+	text-align: center;
+	font-size: 2em;
+	margin: 2em 0 1em;
+}
+.principal {
+	width: 940px;
+	margin: 0 auto;
+}
+.principal p {
+	margin: 0 0 1em;
+}
+.principal strong {
+	font-weight: bold;
+}
+.principal em {
+	font-style: italic;
+}
+.img-utensilios {
+	width: 120px;
+	float: left;
+	margin:0 20px 20px 0;
+	box-shadow: 10px 10px 10px #444444;
+}
+.mapa {
+	width: 940px;
+	margin: 0 auto;
+	padding: 2em 0;
+}
+.mapa p {
+	margin: 0 0 2em;
+	text-align: center;
+}
+.beneficios {
+	padding: 3em 0;
+	width: 940px;
+	margin: 0 auto;
+}
+.conteudo-beneficios {
+	width: 640px;
+	margin: 0 auto;
+}
+.imagem-Beneficios {
+	clear: float;
+	width: 60%;
+	display: inline-block;
+	box-shadow: 10px 10px 10px #444444;
+}
+.itens {
+	line-height: 1.5;
+	font-style: italic;
+	display: inline-block;
+	vertical-align: top;
+	width: 40%;
+}
+.itens li:before {
+	content:"★";
+}
+.itens li:nth-child(2n-1) {
+	font-weight: bold;
+}
+.video {
+	text-align: center;
+	padding: 40px 0 20px 0;
+	
+}
+@media screen and (max-width:480px) {
+	.caixa, .principal, .mapa, .conteudo-beneficios, .beneficios {
+		width: auto;
+	}
+	h1 {
+		text-align: center;
+	}
+	nav {
+		position: static;
+		text-align: center;
+	}
+	.itens, .imagem-Beneficios, .video {
+		width: 100%;
+	}
+	
+	
+}
